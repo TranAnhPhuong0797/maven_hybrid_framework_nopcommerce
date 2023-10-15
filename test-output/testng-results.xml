@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[[2023-10-15 11:16:12,294] Preconditions - Step 01: Navigate to Register Page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-10-15 11:16:13,223] Preconditions - Step 02: Register new User account
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-10-15 11:16:13,767] Preconditions - Step 03: Navigate to Login page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-10-15 11:16:14,103] Preconditions - Step 04: Login new User
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png" height='100' width='150'/> </a></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png" height='100' width='150'/> </a></br>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-10-15T04:16:08Z" name="Nopcommerce" finished-at="2023-10-15T04:16:23Z" duration-ms="15503">
+    <groups>
+    </groups>
+    <test started-at="2023-10-15T04:16:08Z" name="Run on Firefox" finished-at="2023-10-15T04:16:23Z" duration-ms="15503">
+      <class name="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:08Z" name="initBeforeSuite" finished-at="2023-10-15T04:16:08Z" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBeforeSuite -->
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:08Z" name="beforeClass" finished-at="2023-10-15T04:16:14Z" duration-ms="6356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-10-15 11:16:12,294] Preconditions - Step 01: Navigate to Register Page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-10-15 11:16:13,223] Preconditions - Step 02: Register new User account
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-10-15 11:16:13,767] Preconditions - Step 03: Navigate to Login page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-10-15 11:16:14,103] Preconditions - Step 04: Login new User
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="MyAccount_01_CustomerInfor(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:14Z" name="MyAccount_01_CustomerInfor" finished-at="2023-10-15T04:16:16Z" duration-ms="1634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_01_CustomerInfor(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_01_CustomerInfor -->
+        <test-method signature="MyAccount_02_Address(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:16Z" name="MyAccount_02_Address" finished-at="2023-10-15T04:16:18Z" duration-ms="1900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_02_Address(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccount_02_Address -->
+        <test-method signature="MyAccount_03_ChangePassword(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:18Z" name="MyAccount_03_ChangePassword" finished-at="2023-10-15T04:16:19Z" duration-ms="1002" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_03_ChangePassword(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="ico-logout" href="/logout"> is not clickable at point (1271,22) because another element <p class="content"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NSTF48G', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="ico-logout" href="/logout"> is not clickable at point (1271,22) because another element <p class="content"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NSTF48G', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at common.BasePage.clickToElement(BasePage.java:222)
+at pageObject.nopcommerce.portal.UserRegisterPageObject.clickToLogoutLink(UserRegisterPageObject.java:103)
+at com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_03_ChangePassword(LiveCoding_nopcommerce_MyAccount_TestCase.java:175)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png" height='100' width='150'/> </a></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MyAccount_03_ChangePassword -->
+        <test-method signature="MyAccount_04_MyProduct_Reviews(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:19Z" name="MyAccount_04_MyProduct_Reviews" finished-at="2023-10-15T04:16:23Z" duration-ms="3728" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_04_MyProduct_Reviews(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Element is disabled: <input id="AddProductReview_Title" class="review-title" name="AddProductReview.Title" type="text">
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NSTF48G', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is disabled: <input id="AddProductReview_Title" class="review-title" name="AddProductReview.Title" type="text">
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NSTF48G', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+at common.BasePage.sendkeyToElement(BasePage.java:267)
+at common.BasePage.inputToTextboxByID(BasePage.java:711)
+at com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_04_MyProduct_Reviews(LiveCoding_nopcommerce_MyAccount_TestCase.java:218)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png" height='100' width='150'/> </a></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MyAccount_04_MyProduct_Reviews -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase@17b6d426]" started-at="2023-10-15T04:16:23Z" name="afterClass" finished-at="2023-10-15T04:16:23Z" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase -->
+    </test> <!-- Run on Firefox -->
+  </suite> <!-- Nopcommerce -->
+</testng-results>

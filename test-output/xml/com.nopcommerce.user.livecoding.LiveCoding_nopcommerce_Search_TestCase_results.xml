@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.963">
+  <properties />
+  
+  
+            <testcase name="Searh_06_Advanced_Search_With_SubCategories" time="0.761" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_01_Search_With_Empty_Data" time="1.127" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_05_Advanced_Search_With_Paren_Categories" time="1.012" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_03_Search_With_Product_Name_Relative" time="0.501" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_04_Search_With_Product_Name_Adsolute" time="0.439" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_08_Advanced_Search_With_Correct_Manufacturer" time="0.831" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_07_Advanced_Search_With_Incorrect_Manufacturer" time="0.866" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+                <testcase name="Searh_02_Search_With_Data_NOT_Exist" time="0.426" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Search_TestCase" />
+      
+</testsuite>

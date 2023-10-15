@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="46.687">
+  <properties />
+  
+  
+            <testcase name="Sort_01_Sort_With_Name_AtoZ_Asc" time="3.593" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_03_Sort_With_Price_LowToHigh" time="3.313" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_04_Sort_With_Price_HighToLow" time="3.279" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_02_Sort_With_Name_ZtoA_Desc" time="3.285" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_05_Displayed_3_Products_per_page" time="16.654" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_07_9_Products_per_page" time="8.280" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+                <testcase name="Sort_06_6_Products_per_page" time="8.283" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Sort_Display_Paging_TestCase" />
+      
+</testsuite>

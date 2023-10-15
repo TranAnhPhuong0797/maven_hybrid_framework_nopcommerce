@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.617">
+  <properties />
+  
+  
+            <testcase name="Register_04_With_Email_Aldready_Exists" time="0.516" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+                <testcase name="Register_01_With_EmptyData" time="0.666" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+                <testcase name="Register_06_With_ConfirmPassword_NotCorrect" time="0.825" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+                <testcase name="Register_03_With_Valid_Infor" time="1.505" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+                <testcase name="Register_05_With_Password_LessThan_6Chars" time="0.775" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+                <testcase name="Register_02_With_InvalidEmail" time="0.330" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Register_TestCase" />
+      
+</testsuite>

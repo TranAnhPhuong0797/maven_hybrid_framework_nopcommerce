@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run on Firefox</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run on Firefox</h1>
+<p>
+  Test duration: 15.191s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  MyAccount_03_ChangePassword
+      </td>
+  <td class="duration">
+    1.002s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_03_ChangePassword(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        <br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_03_ChangePassword_15_10_2023_11_16_19.png" height='100' width='150'/> </a></br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;ico-logout&quot; href=&quot;/logout&quot;&gt; is not clickable at point (1271,22) because another element &lt;p class=&quot;content&quot;&gt; obscures it<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-NSTF48G&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              common.BasePage.clickToElement(BasePage.java:222)<br />
+              pageObject.nopcommerce.portal.UserRegisterPageObject.clickToLogoutLink(UserRegisterPageObject.java:103)<br />
+              com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_03_ChangePassword(LiveCoding_nopcommerce_MyAccount_TestCase.java:175)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  MyAccount_04_MyProduct_Reviews
+      </td>
+  <td class="duration">
+    3.728s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_04_MyProduct_Reviews(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        <br><a target="_blank" href="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png"><img src="file:///E:\Khoa Hoc Automation\Project\04- Maven Hybrid Framwork\reportNGImage\MyAccount_04_MyProduct_Reviews_15_10_2023_11_16_23.png" height='100' width='150'/> </a></br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.InvalidElementStateException: Element is disabled: &lt;input id=&quot;AddProductReview_Title&quot; class=&quot;review-title&quot; name=&quot;AddProductReview.Title&quot; type=&quot;text&quot;&gt;<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-NSTF48G&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8356, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 443cce9e-60c4-4be1-b051-4c1834574325</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)<br />
+              common.BasePage.sendkeyToElement(BasePage.java:267)<br />
+              common.BasePage.inputToTextboxByID(BasePage.java:711)<br />
+              com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_04_MyProduct_Reviews(LiveCoding_nopcommerce_MyAccount_TestCase.java:218)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  MyAccount_01_CustomerInfor
+      </td>
+  <td class="duration">
+    1.634s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_01_CustomerInfor(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  MyAccount_02_Address
+      </td>
+  <td class="duration">
+    1.900s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase.MyAccount_02_Address(java.lang.reflect.Method)</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

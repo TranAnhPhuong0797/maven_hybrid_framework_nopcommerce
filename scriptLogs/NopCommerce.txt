@@ -1,0 +1,4 @@
+[2023-10-15 11:16:12,294] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 11:16:13,223] Preconditions - Step 02: Register new User account
+[2023-10-15 11:16:13,767] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 11:16:14,103] Preconditions - Step 04: Login new User

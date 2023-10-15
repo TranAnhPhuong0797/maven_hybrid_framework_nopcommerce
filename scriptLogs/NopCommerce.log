@@ -1,0 +1,265 @@
+[2023-10-09 09:58:36,208] Preconditions - Step 01: Navigate to Register Page
+[2023-10-09 09:58:37,150] Preconditions - Step 02: Register new User account
+[2023-10-09 09:58:37,661] Preconditions - Step 03: Navigate to Login page
+[2023-10-09 09:58:38,001] Preconditions - Step 04: Login new User
+[2023-10-09 09:58:38,663] Preconditions - Step 05: Select any product in Home Page
+[2023-10-09 09:59:03,476] Preconditions - Step 01: Navigate to Register Page
+[2023-10-09 09:59:04,409] Preconditions - Step 02: Register new User account
+[2023-10-09 09:59:04,936] Preconditions - Step 03: Navigate to Login page
+[2023-10-09 09:59:05,283] Preconditions - Step 04: Login new User
+[2023-10-09 09:59:05,937] Preconditions - Step 05: Select any product in Home Page
+[2023-10-09 10:03:05,162] Preconditions - Step 01: Select menu computers
+[2023-10-09 10:03:06,730] Preconditions - Step 02: Select category Notebooks
+[2023-10-09 10:03:07,858] Categories Page - Step 01: Select sorting categories Name A to Z
+[2023-10-09 10:03:11,119] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-09 10:03:11,215] Categories Page - Step 01: Select sorting categories Name Z to A
+[2023-10-09 10:03:14,482] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-09 10:03:14,514] Categories Page - Step 01: Select sorting categories Price Low to High
+[2023-10-09 10:03:17,773] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-09 10:03:17,819] Categories Page - Step 01: Select sorting categories Price High to Low
+[2023-10-09 10:03:21,079] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-09 10:03:21,111] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:03:24,371] Categories Page - Step 02: Verify have 3 products is displayed
+[2023-10-09 10:03:24,391] Categories Page - Step 03: Verify next paging icon is displayed
+[2023-10-09 10:03:24,439] Categories Page - Step 04: Verify previous paging icon Undisplayed
+[2023-10-09 10:03:29,460] Categories Page - Step 05: Click next paging icon
+[2023-10-09 10:03:32,711] Categories Page - Step 06: Verify previous paging icon displayed
+[2023-10-09 10:03:32,767] Categories Page - Step 07: Verify next paging icon is Undisplayed
+[2023-10-09 10:03:37,782] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:03:41,029] Categories Page - Step 02: Verify have 6 products is displayed
+[2023-10-09 10:03:41,051] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-09 10:03:46,067] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:03:49,311] Categories Page - Step 02: Verify have 9 products is displayed
+[2023-10-09 10:03:49,335] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-09 10:08:58,201] Preconditions - Step 01: Select menu computers
+[2023-10-09 10:08:59,176] Preconditions - Step 02: Select category Notebooks
+[2023-10-09 10:08:59,616] Categories Page - Step 01: Select sorting categories Name A to Z
+[2023-10-09 10:09:02,880] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-09 10:09:02,975] Categories Page - Step 01: Select sorting categories Name Z to A
+[2023-10-09 10:09:06,227] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-09 10:09:06,257] Categories Page - Step 01: Select sorting categories Price Low to High
+[2023-10-09 10:09:09,514] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-09 10:09:09,565] Categories Page - Step 01: Select sorting categories Price High to Low
+[2023-10-09 10:09:12,810] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-09 10:09:12,843] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:09:16,099] Categories Page - Step 02: Verify have 3 products is displayed
+[2023-10-09 10:09:16,117] Categories Page - Step 03: Verify next paging icon is displayed
+[2023-10-09 10:09:16,166] Categories Page - Step 04: Verify previous paging icon Undisplayed
+[2023-10-09 10:09:21,191] Categories Page - Step 05: Click next paging icon
+[2023-10-09 10:09:24,439] Categories Page - Step 06: Verify previous paging icon displayed
+[2023-10-09 10:09:24,495] Categories Page - Step 07: Verify next paging icon is Undisplayed
+[2023-10-09 10:09:29,513] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:09:32,756] Categories Page - Step 02: Verify have 6 products is displayed
+[2023-10-09 10:09:32,778] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-09 10:09:37,800] Categories Page - Step 01: Select dropdown list Display
+[2023-10-09 10:09:41,046] Categories Page - Step 02: Verify have 9 products is displayed
+[2023-10-09 10:09:41,065] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-10 08:29:26,891] Preconditions - Step 01: Navigate to Register Page
+[2023-10-10 08:29:27,349] Preconditions - Step 02: Register new User account
+[2023-10-10 08:29:28,943] Preconditions - Step 03: Navigate to Login page
+[2023-10-10 08:29:29,402] Preconditions - Step 04: Login new User
+[2023-10-10 08:29:30,277] Preconditions - Step 05: Select any product in Home Page
+[2023-10-15 10:22:11,535] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:22:11,535] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:22:11,897] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:22:11,963] Preconditions - Step 01: Select menu computers
+[2023-10-15 10:22:12,130] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:22:12,352] Preconditions - Step 02: Register new User account
+[2023-10-15 10:22:12,535] Preconditions - Step 02: Select category Notebooks
+[2023-10-15 10:22:12,565] Preconditions - Step 02: Register new User account
+[2023-10-15 10:22:12,642] Preconditions - Step 02: Register new User account
+[2023-10-15 10:22:12,781] Register - Step 01: Click Register Button
+[2023-10-15 10:22:12,956] Categories Page - Step 01: Select sorting categories Name A to Z
+[2023-10-15 10:22:13,046] Register - Step 02: Verify error message from first name textbox
+[2023-10-15 10:22:13,069] Register - Step 03: Verify error message from last name textbox
+[2023-10-15 10:22:13,088] Register - Step 04: Verify error message from email textbox
+[2023-10-15 10:22:13,109] Register - Step 05: Verify error message from password textbox
+[2023-10-15 10:22:13,134] Register - Step 06: Verify error message from confirm password textbox
+[2023-10-15 10:22:13,174] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 10:22:13,232] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 10:22:13,258] Register - Step 01: Input invalid email
+[2023-10-15 10:22:13,323] Register - Step 02: Click Register Button
+[2023-10-15 10:22:13,508] Login - Step 01: Click Login Button
+[2023-10-15 10:22:13,572] Register - Step 03: Verify error message from email textbox
+[2023-10-15 10:22:13,596] Preconditions - Step 04: Login new User
+[2023-10-15 10:22:13,603] Register - Step 01: Input first name
+[2023-10-15 10:22:13,640] Register - Step 02: Input last name
+[2023-10-15 10:22:13,670] Register - Step 03: Input email
+[2023-10-15 10:22:13,733] Register - Step 04: Input password
+[2023-10-15 10:22:13,764] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 10:22:13,769] Login - Step 02: Verify email error message
+[2023-10-15 10:22:13,771] Register - Step 05: Input confirm password
+[2023-10-15 10:22:13,797] Login - Step 01: Input Invalid Email
+[2023-10-15 10:22:13,807] Register - Step 06: Click Register Button
+[2023-10-15 10:22:13,856] Login - Step 02: Input Password
+[2023-10-15 10:22:13,887] Login - Step 03: Click Login Button
+[2023-10-15 10:22:14,093] Preconditions - Step 04: Login new User
+[2023-10-15 10:22:14,115] Login - Step 04: Verify email error message
+[2023-10-15 10:22:14,138] Login - Step 01: Input Invalid Email
+[2023-10-15 10:22:14,192] Login - Step 02: Input Password
+[2023-10-15 10:22:14,236] Login - Step 03: Click Login Button
+[2023-10-15 10:22:14,283] Search Page - Step 01: Navigate to Search page
+[2023-10-15 10:22:14,399] Register - Step 07: Verify message registration completed
+[2023-10-15 10:22:14,433] Register - Step 08: Click Continue Button
+[2023-10-15 10:22:14,558] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:22:14,606] Login - Step 01: Input Email
+[2023-10-15 10:22:14,647] Login - Step 02: Input empty Password
+[2023-10-15 10:22:14,674] Login - Step 03: Click Login Button
+[2023-10-15 10:22:14,698] Search Page - Step 02: Click Search button
+[2023-10-15 10:22:14,772] Register - Step 09: Click Register link
+[2023-10-15 10:22:14,976] My account - Step 01: Navigate to My account page
+[2023-10-15 10:22:14,987] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:22:15,038] Login - Step 01: Input Email
+[2023-10-15 10:22:15,083] Login - Step 02: Input incorrect Password
+[2023-10-15 10:22:15,097] Search Page - Step 03: Verify error message
+[2023-10-15 10:22:15,118] Login - Step 03: Click Login Button
+[2023-10-15 10:22:15,132] Search Page - Step 01: Input product not exist in the search field
+[2023-10-15 10:22:15,133] Register - Step 01: Input first name
+[2023-10-15 10:22:15,171] Search Page - Step 02: Click Search button
+[2023-10-15 10:22:15,180] Register - Step 02: Input last name
+[2023-10-15 10:22:15,214] Register - Step 03: Input email
+[2023-10-15 10:22:15,254] Register - Step 04: Input password
+[2023-10-15 10:22:15,280] Register - Step 05: Input confirm password
+[2023-10-15 10:22:15,307] Register - Step 06: Click Register Button
+[2023-10-15 10:22:15,411] My account - Step 02: Verify My account page displayed
+[2023-10-15 10:22:15,430] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:22:15,452] My account - Step 03: Select gender
+[2023-10-15 10:22:15,476] Login - Step 01: Input Email
+[2023-10-15 10:22:15,523] Login - Step 02: Input Password
+[2023-10-15 10:22:15,544] Search Page - Step 03: Verify message no result is displayed
+[2023-10-15 10:22:15,552] Login - Step 03: Click Login Button
+[2023-10-15 10:22:15,585] Search Page - Step 01: Input product not exist in the search field
+[2023-10-15 10:22:15,623] Search Page - Step 02: Click Search button
+[2023-10-15 10:22:15,635] Register - Step 07: Verify error message email already exists
+[2023-10-15 10:22:15,672] Register - Step 01: Input incorrect password
+[2023-10-15 10:22:15,687] My account - Step 04: Input first name
+[2023-10-15 10:22:15,698] Register - Step 02: Click Register Button
+[2023-10-15 10:22:15,716] My account - Step 05: Input last name
+[2023-10-15 10:22:15,745] My account - Step 04: Input email
+[2023-10-15 10:22:15,780] My account - Step 05: Input company name
+[2023-10-15 10:22:15,814] My account - Step 06: Select day
+[2023-10-15 10:22:15,826] My account - Step 07: Select month
+[2023-10-15 10:22:15,839] My account - Step 08: Select year
+[2023-10-15 10:22:15,852] My account - Step 09: Click Save button
+[2023-10-15 10:22:16,103] Login - Step 04: Verify My account link displayed
+[2023-10-15 10:22:16,150] Login - Step 05: Click to My account link
+[2023-10-15 10:22:16,218] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-15 10:22:16,240] Categories Page - Step 01: Select sorting categories Name Z to A
+[2023-10-15 10:22:16,426] Register - Step 03: Verify error message password
+[2023-10-15 10:22:16,458] Register - Step 01: Input password
+[2023-10-15 10:22:16,503] My account - Step 01: Navigate to Address page
+[2023-10-15 10:22:16,532] Register - Step 02: Input incorrect confirmation password
+[2023-10-15 10:22:16,573] Register - Step 03: Click Register Button
+[2023-10-15 10:22:16,648] Search Page - Step 03: Veirfy number product result is displayed
+[2023-10-15 10:22:16,676] Search Page - Step 04: Veirfy product name is displayed
+[2023-10-15 10:22:16,743] Search Page - Step 01: Input product not exist in the search field
+[2023-10-15 10:22:16,785] Search Page - Step 02: Click Search button
+[2023-10-15 10:22:16,985] My account - Step 02: Click Add New button
+[2023-10-15 10:22:17,136] Search Page - Step 03: Veirfy number product result is displayed
+[2023-10-15 10:22:17,171] Search Page - Step 04: Veirfy product name is displayed
+[2023-10-15 10:22:17,203] Search Page - Step 01: Input value in Search textbox
+[2023-10-15 10:22:17,240] Search Page - Step 02: Tick the Advanced Search checkbox
+[2023-10-15 10:22:17,308] Register - Step 04: Verify error message confirm password
+[2023-10-15 10:22:17,467] Search Page - Step 03: Select categories with value = Computers
+[2023-10-15 10:22:17,505] My account - Step 03: Input first name
+[2023-10-15 10:22:17,539] My account - Step 04: Input last name
+[2023-10-15 10:22:17,570] My account - Step 05: Input email
+[2023-10-15 10:22:17,604] My account - Step 06: Input company
+[2023-10-15 10:22:17,634] My account - Step 07: Select country
+[2023-10-15 10:22:17,711] Search Page - Step 04: Tick the Automatically search sub categories checkbox
+[2023-10-15 10:22:17,729] Search Page - Step 05: Click Search button
+[2023-10-15 10:22:17,873] My account - Step 08: Select state/province
+[2023-10-15 10:22:18,025] My account - Step 09: Input city
+[2023-10-15 10:22:18,050] My account - Step 10: Input address 1
+[2023-10-15 10:22:18,081] My account - Step 11: Input address 2
+[2023-10-15 10:22:18,105] Search Page - Step 06: Verify message no result is displayed
+[2023-10-15 10:22:18,113] My account - Step 12: Input zip / portal code
+[2023-10-15 10:22:18,144] My account - Step 13: Input phone number
+[2023-10-15 10:22:18,179] Search Page - Step 01: Input value in Search textbox
+[2023-10-15 10:22:18,181] My account - Step 14: Input fax number
+[2023-10-15 10:22:18,208] My account - Step 15: Click Save button
+[2023-10-15 10:22:18,217] Search Page - Step 02: Tick the Advanced Search checkbox
+[2023-10-15 10:22:18,234] Search Page - Step 03: Select categories with value = Computers
+[2023-10-15 10:22:18,259] Search Page - Step 04: Tick the Automatically search sub categories checkbox
+[2023-10-15 10:22:18,498] Search Page - Step 05: Click Search button
+[2023-10-15 10:22:18,926] Search Page - Step 06: Veirfy number product result is displayed
+[2023-10-15 10:22:18,981] Search Page - Step 07: Veirfy product name is displayed
+[2023-10-15 10:22:19,022] Search Page - Step 01: Input value in Search textbox
+[2023-10-15 10:22:19,060] Search Page - Step 02: Tick the Advanced Search checkbox
+[2023-10-15 10:22:19,090] Search Page - Step 03: Select categories with value = Computers
+[2023-10-15 10:22:19,116] Search Page - Step 04: Tick the Automatically search sub categories checkbox
+[2023-10-15 10:22:19,137] Search Page - Step 05: Select manufacturer with value = HP
+[2023-10-15 10:22:19,376] Search Page - Step 06: Click Search button
+[2023-10-15 10:22:19,495] Categories Page - Step 02: Verify the product name is sorted correctly
+[2023-10-15 10:22:19,517] Categories Page - Step 01: Select sorting categories Price Low to High
+[2023-10-15 10:22:19,597] My account - Step 16: Veirfy message address added successfully
+[2023-10-15 10:22:19,621] My account - Step 01: Navigate to Chang Password page
+[2023-10-15 10:22:19,737] Search Page - Step 07: Verify message no result is displayed
+[2023-10-15 10:22:19,787] Search Page - Step 01: Input value in Search textbox
+[2023-10-15 10:22:19,829] Search Page - Step 02: Tick the Advanced Search checkbox
+[2023-10-15 10:22:19,846] Search Page - Step 03: Select categories with value = Computers
+[2023-10-15 10:22:19,872] Search Page - Step 04: Tick the Automatically search sub categories checkbox
+[2023-10-15 10:22:19,888] Search Page - Step 05: Select manufacturer with value = Apple
+[2023-10-15 10:22:20,132] Search Page - Step 06: Click Search button
+[2023-10-15 10:22:20,424] My account - Step 02: Input old password
+[2023-10-15 10:22:20,470] My account - Step 03: Input new password
+[2023-10-15 10:22:20,508] My account - Step 04: Input confirm new password
+[2023-10-15 10:22:20,539] Search Page - Step 07: Veirfy product name is displayed
+[2023-10-15 10:22:20,540] My account - Step 05: Click Save button
+[2023-10-15 10:22:21,490] My account - Step 06: Click logout link
+[2023-10-15 10:22:22,760] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-15 10:22:22,796] Categories Page - Step 01: Select sorting categories Price High to Low
+[2023-10-15 10:22:26,037] Categories Page - Step 02: Verify the product price is sorted correctly
+[2023-10-15 10:22:26,060] Categories Page - Step 01: Select dropdown list Display
+[2023-10-15 10:22:29,305] Categories Page - Step 02: Verify have 3 products is displayed
+[2023-10-15 10:22:29,322] Categories Page - Step 03: Verify next paging icon is displayed
+[2023-10-15 10:22:29,368] Categories Page - Step 04: Verify previous paging icon Undisplayed
+[2023-10-15 10:22:34,375] Categories Page - Step 05: Click next paging icon
+[2023-10-15 10:22:37,609] Categories Page - Step 06: Verify previous paging icon displayed
+[2023-10-15 10:22:37,656] Categories Page - Step 07: Verify next paging icon is Undisplayed
+[2023-10-15 10:22:42,669] Categories Page - Step 01: Select dropdown list Display
+[2023-10-15 10:22:45,909] Categories Page - Step 02: Verify have 6 products is displayed
+[2023-10-15 10:22:45,926] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-15 10:22:50,946] Categories Page - Step 01: Select dropdown list Display
+[2023-10-15 10:22:54,187] Categories Page - Step 02: Verify have 9 products is displayed
+[2023-10-15 10:22:54,205] Categories Page - Step 03: Verify undisplayed paging
+[2023-10-15 10:40:44,392] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:40:45,341] Preconditions - Step 02: Register new User account
+[2023-10-15 10:40:46,171] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 10:40:47,190] Login - Step 02: Input Password
+[2023-10-15 10:40:47,222] Login - Step 03: Click Login Button
+[2023-10-15 10:40:47,451] Login - Step 04: Verify email error message
+[2023-10-15 10:40:47,475] Login - Step 01: Input Invalid Email
+[2023-10-15 10:40:47,523] Login - Step 02: Input Password
+[2023-10-15 10:40:47,554] Login - Step 03: Click Login Button
+[2023-10-15 10:40:47,858] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:40:47,902] Login - Step 01: Input Email
+[2023-10-15 10:40:47,949] Login - Step 02: Input empty Password
+[2023-10-15 10:40:47,980] Login - Step 03: Click Login Button
+[2023-10-15 10:40:48,279] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:40:48,318] Login - Step 01: Input Email
+[2023-10-15 10:40:48,358] Login - Step 02: Input incorrect Password
+[2023-10-15 10:40:48,388] Login - Step 03: Click Login Button
+[2023-10-15 10:40:48,685] Login - Step 04: Verify login unsuccessful message
+[2023-10-15 10:40:48,731] Login - Step 01: Input Email
+[2023-10-15 10:40:48,770] Login - Step 02: Input Password
+[2023-10-15 10:40:48,799] Login - Step 03: Click Login Button
+[2023-10-15 10:40:49,346] Login - Step 04: Verify My account link displayed
+[2023-10-15 10:40:49,389] Login - Step 05: Click to My account link
+[2023-10-15 10:54:21,908] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 10:54:22,827] Preconditions - Step 02: Register new User account
+[2023-10-15 10:54:23,362] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 11:04:37,783] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 11:04:38,761] Preconditions - Step 02: Register new User account
+[2023-10-15 11:04:39,313] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 11:05:19,268] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 11:10:19,080] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 11:10:20,052] Preconditions - Step 02: Register new User account
+[2023-10-15 11:10:20,575] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 11:10:20,925] Preconditions - Step 04: Login new User
+[2023-10-15 11:12:54,119] Preconditions - Step 01: Select menu computers
+[2023-10-15 11:12:55,160] Preconditions - Step 02: Select category Notebooks
+[2023-10-15 11:16:12,294] Preconditions - Step 01: Navigate to Register Page
+[2023-10-15 11:16:13,223] Preconditions - Step 02: Register new User account
+[2023-10-15 11:16:13,767] Preconditions - Step 03: Navigate to Login page
+[2023-10-15 11:16:14,103] Preconditions - Step 04: Login new User

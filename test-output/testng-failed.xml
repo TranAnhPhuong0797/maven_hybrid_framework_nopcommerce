@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Nopcommerce]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="common.MethodListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="reportConfig.ExtentTestListenerV5"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase">
+        <methods>
+          <include name="initBeforeSuite"/>
+          <include name="MyAccount_03_ChangePassword" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="MyAccount_04_MyProduct_Reviews" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [Nopcommerce] -->
