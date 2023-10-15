@@ -46,25 +46,25 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	}
 	
 	@Test
-	public void Wishlist_01_(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+	public void Wishlist_01_Add_To_Wishlist(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Add to Wishlist");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 01: Click Add to Wishlist");
 		
 	}
 	
 	@Test
-	public void Wishlist_02_(Method method) {
-		
+	public void Wishlist_02_Add_Product_To_Card_From_Wishlist(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Add Product to Card");
 	}
 	
 	@Test
-	public void Wishlist_03_(Method method) {
-		
+	public void Wishlist_03_Remove_Product_In_Wishlist(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Remove product");
 	}
 	
 	@Test
-	public void Wishlist_04_(Method method) {
-		
+	public void Wishlist_04_Add_Product_To_Compare(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Add Product to Compare");
 	}
 	
 	@Test
