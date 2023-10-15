@@ -64,7 +64,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	
 	@Test
 	public void Wishlist_04_Add_Product_To_Compare(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Add Product to Compare");
+		
 	}
 	
 	@Test
