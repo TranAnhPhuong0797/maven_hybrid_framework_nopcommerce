@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.nopcommerce.data.UserData;
 
 import common.BaseTest;
 import pageObject.nopcommerce.portal.UserHomePageObject;
@@ -25,12 +26,12 @@ public class LiveCoding_nopcommerce_Login_TestCase extends BaseTest{
 	public void beforeClass(String browserName) {
 		driver = getBrowserName(browserName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
-		firstName = "Tony";
-		lastName = "Teo";
+		firstName = UserData.Register.FIRST_NAME;
+		lastName = UserData.Register.LAST_NAME;
 		invalidEmail = "testEmail" + fakeNumber() + "@@gmail.vn";
-		emailNotFound = "testEmail" + fakeNumber() + "@gmail.vn";;
-		emailAddress = "automationfc.vn@gmail.com";
-		validPassword = "123456";
+		emailNotFound = "testEmail" + fakeNumber() + "@gmail.vn";
+		emailAddress = UserData.Register.EMAIL_ADDRESS;
+		validPassword = UserData.Register.PASSWORD;
 		incorrectPassword= "012345";
 		
 		//Preconditions

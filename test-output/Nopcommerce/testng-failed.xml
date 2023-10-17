@@ -11,15 +11,14 @@
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase">
+      <class name="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Wishlist_Compare_RecentView">
         <methods>
           <include name="initBeforeSuite"/>
-          <include name="MyAccount_03_ChangePassword" invocation-numbers="0"/>
           <include name="beforeClass"/>
-          <include name="MyAccount_04_MyProduct_Reviews" invocation-numbers="0"/>
           <include name="afterClass"/>
+          <include name="Wishlist_01_Add_To_Wishlist" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_MyAccount_TestCase -->
+      </class> <!-- com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Wishlist_Compare_RecentView -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [Nopcommerce] -->

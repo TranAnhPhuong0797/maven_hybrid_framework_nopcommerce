@@ -75,4 +75,8 @@ public class PageGeneratorManager {
 	public static UserSearchPageObject getUserSearchPage(WebDriver driver) {
 		return new UserSearchPageObject(driver);
 	}
+	
+	public static UserWishlistPageObject getUserWishlistPage(WebDriver driver) {
+		return new UserWishlistPageObject(driver);
+	}
 }

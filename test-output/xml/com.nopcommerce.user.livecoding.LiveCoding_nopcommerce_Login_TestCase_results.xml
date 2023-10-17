@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.256">
+           time="3.338">
   <properties />
   
   
-            <testcase name="Login_03_Login_With_Email_Not_Register" time="0.460" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
-                <testcase name="Login_01_Login_With_EmptyData" time="0.592" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
-                <testcase name="Login_06_Login_With_Email_Register_Password_Valid" time="1.011" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
-                <testcase name="Login_02_Login_With_InvalidEmail" time="0.341" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
-                <testcase name="Login_05_Login_With_Email_Register_Password_Invalid" time="0.436" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
-                <testcase name="Login_04_Login_With_Email_Register_Password_Empty" time="0.416" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+            <testcase name="Login_04_Login_With_Email_Register_Password_Empty" time="0.431" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+                <testcase name="Login_02_Login_With_InvalidEmail" time="0.351" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+                <testcase name="Login_03_Login_With_Email_Not_Register" time="0.463" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+                <testcase name="Login_06_Login_With_Email_Register_Password_Valid" time="1.012" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+                <testcase name="Login_05_Login_With_Email_Register_Password_Invalid" time="0.425" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
+                <testcase name="Login_01_Login_With_EmptyData" time="0.656" classname="com.nopcommerce.user.livecoding.LiveCoding_nopcommerce_Login_TestCase" />
       
 </testsuite>

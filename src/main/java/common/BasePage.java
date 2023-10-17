@@ -733,6 +733,15 @@ public class BasePage {
 		sendkeyToElement(driver, BasePageUINopcommerce.DYNAMIC_TEXT_AREA_BY_ID, value, textareaId);
 	}
 	
+	public void closeBarNotification(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUINopcommerce.CLOSE_NOTIFICATION_BUTTON);
+		clickToElementByJS(driver, BasePageUINopcommerce.CLOSE_NOTIFICATION_BUTTON);
+	}
+	
+	public boolean verifyBarNotification(WebDriver driver, String message) {
+		return isElementDisplayed(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS, message);
+	}
+	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
 		clickToElement(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
