@@ -29,4 +29,11 @@ public class BasePageUINopcommerce {
 	public static final String DYNAMIC_CHECKBOX_BUTTON_BY_LABEL = "xpath=//label[contains(text(),'%s')]//following-sibling::input";
 	public static final String BAR_NOTIFICATION_SUCCESS = "xpath=//div[@class='bar-notification success']/p[text()='%s']";
 	public static final String ADDRESS_INFOR_SECTION = "xpath=//strong[text()='%s']//parent::div[@class='title']//following-sibling::ul";
+	
+	//Link on Header bar
+	public static final String WISHLIST_LINK = "xpath=//a[@class='ico-wishlist']";
+	public static final String REGISTER_LINK = "xpath=//a[@class='ico-register']";
+	public static final String LOGIN_LINK = "xpath=//a[@class='ico-login']";
+	public static final String MYACCOUNT_LINK = "xpath=//a[@class='ico-account']";
+	public static final String LOGO_HOME = "xpath=//div[@class='header-logo']";
 }

@@ -79,4 +79,8 @@ public class PageGeneratorManager {
 	public static UserWishlistPageObject getUserWishlistPage(WebDriver driver) {
 		return new UserWishlistPageObject(driver);
 	}
+	
+	public static UserShopingCartPage getUserShopingCartPage(WebDriver driver) {
+		return new UserShopingCartPage(driver);
+	}
 }

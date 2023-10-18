@@ -742,6 +742,16 @@ public class BasePage {
 		return isElementDisplayed(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS, message);
 	}
 	
+	public void OpenWishlist(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUINopcommerce.WISHLIST_LINK);
+		clickToElementByJS(driver, BasePageUINopcommerce.WISHLIST_LINK);
+	}
+	
+	public void OpenHomePage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUINopcommerce.LOGO_HOME);
+		clickToElementByJS(driver, BasePageUINopcommerce.LOGO_HOME);
+	}
+	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
 		clickToElement(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
