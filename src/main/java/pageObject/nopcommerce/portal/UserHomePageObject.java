@@ -51,15 +51,21 @@ public class UserHomePageObject extends BasePage{
 		clickToElement(driver, HomePageUI.HEADER_MENU, menu);
 	}
 
-	public void clickCustomerServiceLinkInFooter(String link) {
+	public UserCompareProductPageObject clickCustomerServiceLinkInFooter(String link) {
 		waitForElementClickable(driver, HomePageUI.FOOTER_MENU_CUSTOMER_SERVICE_LINK, link);
 		clickToElement(driver, HomePageUI.FOOTER_MENU_CUSTOMER_SERVICE_LINK, link);
+		return PageGeneratorManager.getUserCompareProductPage(driver);
 	}
 
 	public UserDetailProductPageObject selectProductInSectionFeaturedProducts(String productName) {
-		waitForElementVisible(driver, HomePageUI.PRODUCT_BY_NAME, productName);
+		waitForElementClickable(driver, HomePageUI.PRODUCT_BY_NAME, productName);
 		clickToElement(driver, HomePageUI.PRODUCT_BY_NAME, productName);
 		return PageGeneratorManager.getUserDetailProductPage(driver);
+	}
+
+	public void addProductToCompare(String product) {
+		waitForElementClickable(driver,HomePageUI.PRODUCT_BUTTON_ADD_TO_COMPARE, product);
+		clickToElement(driver, HomePageUI.PRODUCT_BUTTON_ADD_TO_COMPARE, product);
 	}
 
 

@@ -83,4 +83,8 @@ public class PageGeneratorManager {
 	public static UserShopingCartPage getUserShopingCartPage(WebDriver driver) {
 		return new UserShopingCartPage(driver);
 	}
+	
+	public static UserCompareProductPageObject getUserCompareProductPage(WebDriver driver) {
+		return new UserCompareProductPageObject(driver);
+	}
 }

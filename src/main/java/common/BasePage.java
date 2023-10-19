@@ -742,6 +742,11 @@ public class BasePage {
 		return isElementDisplayed(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS, message);
 	}
 	
+	public void SelectFooterCustomerService(WebDriver driver, String customerServiceLink) {
+		waitForElementClickable(driver, BasePageUINopcommerce.LINK_OF_CUSTOMER_SERVICE, customerServiceLink);
+		clickToElement(driver, BasePageUINopcommerce.LINK_OF_CUSTOMER_SERVICE, customerServiceLink);
+	}
+	
 	public void OpenWishlist(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.WISHLIST_LINK);
 		clickToElementByJS(driver, BasePageUINopcommerce.WISHLIST_LINK);
@@ -749,7 +754,7 @@ public class BasePage {
 	
 	public void OpenHomePage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.LOGO_HOME);
-		clickToElementByJS(driver, BasePageUINopcommerce.LOGO_HOME);
+		clickToElement(driver, BasePageUINopcommerce.LOGO_HOME);
 	}
 	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {

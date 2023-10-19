@@ -14,6 +14,7 @@ import com.nopcommerce.data.UserData;
 
 import common.BaseTest;
 import pageObject.nopcommerce.portal.PageGeneratorManager;
+import pageObject.nopcommerce.portal.UserCompareProductPageObject;
 import pageObject.nopcommerce.portal.UserDetailProductPageObject;
 import pageObject.nopcommerce.portal.UserHomePageObject;
 import pageObject.nopcommerce.portal.UserLoginPageObject;
@@ -102,7 +103,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		sleepInSecond(3);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 05: Verify product is removed in wishlist page");
-		Assert.assertFalse(userWishlistPage.verifyProductisAddedSuccess("Apple MacBook Pro 13-inch"));
+		Assert.assertTrue(userWishlistPage.verifyProductisRemovedSuccess("Apple MacBook Pro 13-inch"));
 	}
 	
 	@Test
@@ -129,11 +130,48 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 06: Navigate to Wishlist page");
 		userWishlistPage = userDetailProductPage.OpenWishlist();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 07: Tick remove checkbox");
+		userWishlistPage.clickRemoveProduct("HTC One M8 Android L 5.0 Lollipop");
+		userWishlistPage.clickRemoveProduct("Apple MacBook Pro 13-inch");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 08: Verify wishlist is empty");
+		userWishlistPage.verifyWishlistEmpty("The wishlist is empty!");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 10: Verify product is removed");
+		Assert.assertTrue(userWishlistPage.verifyProductisRemovedSuccess("HTC One M8 Android L 5.0 Lollipop"));
 	}
 	
 	@Test
 	public void Wishlist_04_Add_Product_To_Compare(Method method) {
-		//ExtentTestManagerV5.startTest(method.getName(), "Add product to Compare");
+		ExtentTestManagerV5.startTest(method.getName(), "Add product to Compare");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
+		userWishlistPage.OpenHomePage(driver);
+		
+		sleepInSecond(2);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 02: Add products to Compare");
+		userHomePage.addProductToCompare("Build your own computer");
+		sleepInSecond(1);
+		userHomePage.addProductToCompare("$25 Virtual Gift Card");
+		sleepInSecond(1);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 03: Verify messgate products is added to compare list");
+		userHomePage.verifyBarNotification(driver, "The product has been added to your \nproduct comparison");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 04: Navigate to compare list");
+		userCompareProductPage = userHomePage.clickCustomerServiceLinkInFooter("Compare products list");
+		sleepInSecond(1);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 05: Verify information");
+		
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 06: Click Clear button");
+		userCompareProductPage.clickClearListButton();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 07: Verify message no items to compare");
+		userCompareProductPage.verifyMessageNoItems("You have no items to compare.");
+		
 		
 	}
 	
@@ -157,4 +195,5 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	private UserDetailProductPageObject userDetailProductPage;
 	private UserWishlistPageObject userWishlistPage;
 	private UserShopingCartPage userShopingCartPage;
+	private UserCompareProductPageObject userCompareProductPage;
 }

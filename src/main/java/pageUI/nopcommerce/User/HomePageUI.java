@@ -14,4 +14,5 @@ public class HomePageUI {
 	
 	//Featured products
 	public static final String PRODUCT_BY_NAME = "xpath=//div[@class='product-item']//h2[@class='product-title']/a[text()='%s']";
+	public static final String PRODUCT_BUTTON_ADD_TO_COMPARE = "xpath=//a[text()='%s']//parent::h2//following-sibling::div[@class='add-info']//button[contains(@class,'add-to-compare-list')]";
 }
