@@ -35,7 +35,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 
 	@Test
 	public void Sort_01_Sort_With_Name_AtoZ_Asc(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Sort from A to Z");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select sorting categories Name A to Z");
 		categoryPage.selectToDropdownByName(driver, "products-orderby", "Name: A to Z");
 		categoryPage.sleepInSecond(3);
@@ -46,7 +46,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_02_Sort_With_Name_ZtoA_Desc(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Sort from Z to A");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select sorting categories Name Z to A");
 		categoryPage.selectToDropdownByName(driver, "products-orderby", "Name: Z to A");
 		categoryPage.sleepInSecond(3);
@@ -57,7 +57,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_03_Sort_With_Price_LowToHigh(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Sort from Low to High");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select sorting categories Price Low to High");
 		categoryPage.selectToDropdownByName(driver, "products-orderby", "Price: Low to High");
 		categoryPage.sleepInSecond(3);
@@ -68,7 +68,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_04_Sort_With_Price_HighToLow(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Sort from High to Low");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select sorting categories Price High to Low");
 		categoryPage.selectToDropdownByName(driver, "products-orderby", "Price: High to Low");
 		categoryPage.sleepInSecond(3);
@@ -79,7 +79,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_05_Displayed_3_Products_per_page(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Verify the number of products");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select dropdown list Display");
 		categoryPage.selectToDropdownByName(driver, "products-pagesize", "3");
 		categoryPage.sleepInSecond(3);
@@ -106,7 +106,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_06_6_Products_per_page(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Verify the number of products");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select dropdown list Display");
 		categoryPage.selectToDropdownByName(driver, "products-pagesize", "6");
 		categoryPage.sleepInSecond(3);
@@ -120,7 +120,7 @@ public class LiveCoding_nopcommerce_Sort_Display_Paging_TestCase extends BaseTes
 	
 	@Test
 	public void Sort_07_9_Products_per_page(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Verify the number of products");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Categories Page - Step 01: Select dropdown list Display");
 		categoryPage.selectToDropdownByName(driver, "products-pagesize", "9");
 		categoryPage.sleepInSecond(3);

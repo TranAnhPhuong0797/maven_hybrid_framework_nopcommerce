@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import pageObject.nopcommerce.portal.UserAddressPageObject;
 import pageObject.nopcommerce.portal.UserBackInStockSubscriptionsPageObject;
@@ -740,6 +741,10 @@ public class BasePage {
 	
 	public boolean verifyBarNotification(WebDriver driver, String message) {
 		return isElementDisplayed(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS, message);
+	}
+	
+	public void verifyBarNotificationWithHyperLink(WebDriver driver, String message) {
+		Assert.assertEquals(getElementAttribute(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS_HAVE_HYPERLINK, "innerText"), message);
 	}
 	
 	public void SelectFooterCustomerService(WebDriver driver, String customerServiceLink) {

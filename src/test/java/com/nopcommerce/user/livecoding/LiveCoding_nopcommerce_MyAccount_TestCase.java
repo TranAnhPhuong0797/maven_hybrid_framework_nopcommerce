@@ -66,7 +66,7 @@ public class LiveCoding_nopcommerce_MyAccount_TestCase extends BaseTest{
 
 	@Test
 	public void MyAccount_01_CustomerInfor(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "CustomerInfor page");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "My account - Step 01: Navigate to My account page");
 		customerInforPage = userHomePage.clickToMyAccountLink();
 		
@@ -103,7 +103,7 @@ public class LiveCoding_nopcommerce_MyAccount_TestCase extends BaseTest{
 	
 	@Test
 	public void MyAccount_02_Address(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Address page");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "My account - Step 01: Navigate to Address page");
 		addressPage = customerInforPage.openAddressPage(driver);
 		
@@ -155,7 +155,7 @@ public class LiveCoding_nopcommerce_MyAccount_TestCase extends BaseTest{
 	
 	@Test
 	public void MyAccount_03_ChangePassword(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Change Password page");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "My account - Step 01: Navigate to Chang Password page");
 		changePasswordPage = addressPage.openChangePasswordPage(driver);
 		
@@ -192,7 +192,7 @@ public class LiveCoding_nopcommerce_MyAccount_TestCase extends BaseTest{
 	
 	@Test
 	public void MyAccount_04_MyProduct_Reviews(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "My product review page");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "My account - Step 01: Back to Home Page");
 		userHomePage.backToHomePage();
 		

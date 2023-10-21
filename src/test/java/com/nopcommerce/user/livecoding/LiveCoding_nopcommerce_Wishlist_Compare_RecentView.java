@@ -14,6 +14,7 @@ import com.nopcommerce.data.UserData;
 
 import common.BaseTest;
 import pageObject.nopcommerce.portal.PageGeneratorManager;
+import pageObject.nopcommerce.portal.UserCategoriesPageObject;
 import pageObject.nopcommerce.portal.UserCompareProductPageObject;
 import pageObject.nopcommerce.portal.UserDetailProductPageObject;
 import pageObject.nopcommerce.portal.UserHomePageObject;
@@ -22,7 +23,6 @@ import pageObject.nopcommerce.portal.UserRegisterPageObject;
 import pageObject.nopcommerce.portal.UserShopingCartPage;
 import pageObject.nopcommerce.portal.UserWishlistPageObject;
 import reportConfig.ExtentTestManagerV5;
-import utilities.DataHelper;
 
 public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest{
 	@Parameters("browser")
@@ -157,19 +157,23 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		sleepInSecond(1);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 03: Verify messgate products is added to compare list");
-		userHomePage.verifyBarNotification(driver, "The product has been added to your \nproduct comparison");
+		userHomePage.verifyBarNotificationWithHyperLink(driver, "The product has been added to your product comparison");
 		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 04: Navigate to compare list");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Compare Page - Step 04: Navigate to compare list");
 		userCompareProductPage = userHomePage.clickCustomerServiceLinkInFooter("Compare products list");
 		sleepInSecond(1);
 		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 05: Verify information");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Compare Page - Step 05: Verify information");
+		userCompareProductPage.verifyCompareTableHaveRemoveButtons(2);
+		userCompareProductPage.verifyCompapeTableProductNameWithIndex("$25 Virtual Gift Card", "2");
+		userCompareProductPage.verifyCompapeTableProductNameWithIndex("Build your own computer", "3");
+		userCompareProductPage.verifyCompareTableProductPriceWithIndex("$25.00", "2");
+		userCompareProductPage.verifyCompareTableProductPriceWithIndex("$1,200.00", "3");
 		
-		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 06: Click Clear button");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Compare Page - Step 06: Click Clear button");
 		userCompareProductPage.clickClearListButton();
 		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 07: Verify message no items to compare");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Compare Page - Step 07: Verify message no items to compare");
 		userCompareProductPage.verifyMessageNoItems("You have no items to compare.");
 		
 		
@@ -177,6 +181,26 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	
 	@Test
 	public void Wishlist_05_(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
+		userWishlistPage.OpenHomePage(driver);
+		
+		sleepInSecond(2);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 02: Select Computer menu");
+		userCategoriesPage = userHomePage.selectHeaderMenu("Computers");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 03: Click 5 Products");
+		userCategoriesPage.selectCategories("Desktops");
+		userCategoriesPage.selectProductTitle("Build your own computer");
+		userCategoriesPage.selectProductTitle("Digital Storm VANQUISH 3 Custom Performance PC");
+		userCategoriesPage.selectProductTitle("Lenovo IdeaCentre 600 All-in-One PC");
+		userCategoriesPage.selectCategories("Notebooks");
+		userCategoriesPage.selectProductTitle("HP Spectre XT Pro UltraBook");
+		userCategoriesPage.selectProductTitle("Lenovo Thinkpad X1 Carbon Laptop");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 04: Navigate to Recently viewed products page");
+		userCategoriesPage.SelectFooterCustomerService(driver, "Recently viewed products");
 		
 	}
 	
@@ -196,4 +220,5 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	private UserWishlistPageObject userWishlistPage;
 	private UserShopingCartPage userShopingCartPage;
 	private UserCompareProductPageObject userCompareProductPage;
+	private UserCategoriesPageObject userCategoriesPage;
 }

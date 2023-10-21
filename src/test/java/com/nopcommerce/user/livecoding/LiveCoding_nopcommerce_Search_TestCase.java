@@ -46,7 +46,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 
 	@Test
 	public void Searh_01_Search_With_Empty_Data(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with empty data");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Navigate to Search page");
 		userHomePage.clickCustomerServiceLinkInFooter("Search");
 		
@@ -62,7 +62,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_02_Search_With_Data_NOT_Exist(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with data not exist");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input product not exist in the search field");
 		userSearchPage.inputValueInSearchTextbox("Macbook Pro 2050");
 		
@@ -75,7 +75,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_03_Search_With_Product_Name_Relative(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with product name relative");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input product not exist in the search field");
 		userSearchPage.inputValueInSearchTextbox("Lenovo");
 		
@@ -92,7 +92,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_04_Search_With_Product_Name_Adsolute(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with product name adsolute");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input product not exist in the search field");
 		userSearchPage.inputValueInSearchTextbox("Thinkpad x1 carbon");
 		
@@ -108,7 +108,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_05_Advanced_Search_With_Paren_Categories(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with paren category");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input value in Search textbox");
 		userSearchPage.inputValueInSearchTextbox("Apple MacBook Pro");
 		
@@ -130,7 +130,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_06_Advanced_Search_With_SubCategories(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with sub categories");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input value in Search textbox");
 		userSearchPage.inputValueInSearchTextbox("Apple MacBook Pro");
 		
@@ -155,7 +155,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_07_Advanced_Search_With_Incorrect_Manufacturer(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with incorrect manufacturer");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input value in Search textbox");
 		userSearchPage.inputValueInSearchTextbox("Apple MacBook Pro");
 		
@@ -180,7 +180,7 @@ public class LiveCoding_nopcommerce_Search_TestCase extends BaseTest{
 	
 	@Test
 	public void Searh_08_Advanced_Search_With_Correct_Manufacturer(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Register With EmptyData");
+		ExtentTestManagerV5.startTest(method.getName(), "Search with correct manufacturer");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Search Page - Step 01: Input value in Search textbox");
 		userSearchPage.inputValueInSearchTextbox("Apple MacBook Pro");
 		

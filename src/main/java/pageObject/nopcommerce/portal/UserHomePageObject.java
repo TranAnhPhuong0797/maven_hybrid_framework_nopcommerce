@@ -46,9 +46,10 @@ public class UserHomePageObject extends BasePage{
 		clickToElement(driver, HomePageUI.LOGO_HOME);		
 	}
 
-	public void selectHeaderMenu(String menu) {
+	public UserCategoriesPageObject selectHeaderMenu(String menu) {
 		waitForElementClickable(driver, HomePageUI.HEADER_MENU, menu);
 		clickToElement(driver, HomePageUI.HEADER_MENU, menu);
+		return PageGeneratorManager.getUserCategoriesPage(driver);
 	}
 
 	public UserCompareProductPageObject clickCustomerServiceLinkInFooter(String link) {
