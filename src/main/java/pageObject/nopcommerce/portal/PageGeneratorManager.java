@@ -87,4 +87,8 @@ public class PageGeneratorManager {
 	public static UserCompareProductPageObject getUserCompareProductPage(WebDriver driver) {
 		return new UserCompareProductPageObject(driver);
 	}
+	
+	public static UserRecentlyViewProductPageObject getUserRecentlyViewProductPage(WebDriver driver) {
+		return new UserRecentlyViewProductPageObject(driver);
+	}
 }

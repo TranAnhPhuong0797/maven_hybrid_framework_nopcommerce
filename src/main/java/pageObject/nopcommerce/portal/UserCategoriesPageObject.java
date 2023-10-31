@@ -152,4 +152,9 @@ public class UserCategoriesPageObject extends BasePage {
 		return isElementUndisplayed(driver, CategoriesPageUI.CURRENT_PAGING_PRODUCT);
 	}
 
+	public void selectProductBreadcrumb(String breadcrumb) {
+		waitForElementVisible(driver, CategoriesPageUI.BREADCRUMB, breadcrumb);
+		clickToElementByJS(driver, CategoriesPageUI.BREADCRUMB, breadcrumb);
+	}
+
 }

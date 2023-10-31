@@ -19,6 +19,7 @@ import pageObject.nopcommerce.portal.UserCompareProductPageObject;
 import pageObject.nopcommerce.portal.UserDetailProductPageObject;
 import pageObject.nopcommerce.portal.UserHomePageObject;
 import pageObject.nopcommerce.portal.UserLoginPageObject;
+import pageObject.nopcommerce.portal.UserRecentlyViewProductPageObject;
 import pageObject.nopcommerce.portal.UserRegisterPageObject;
 import pageObject.nopcommerce.portal.UserShopingCartPage;
 import pageObject.nopcommerce.portal.UserWishlistPageObject;
@@ -193,15 +194,23 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 03: Click 5 Products");
 		userCategoriesPage.selectCategories("Desktops");
 		userCategoriesPage.selectProductTitle("Build your own computer");
+		userCategoriesPage.selectProductBreadcrumb("Desktops");
 		userCategoriesPage.selectProductTitle("Digital Storm VANQUISH 3 Custom Performance PC");
+		userCategoriesPage.selectProductBreadcrumb("Desktops");
 		userCategoriesPage.selectProductTitle("Lenovo IdeaCentre 600 All-in-One PC");
+		userCategoriesPage.selectProductBreadcrumb("Desktops");
 		userCategoriesPage.selectCategories("Notebooks");
 		userCategoriesPage.selectProductTitle("HP Spectre XT Pro UltraBook");
+		userCategoriesPage.selectProductBreadcrumb("Notebooks");
 		userCategoriesPage.selectProductTitle("Lenovo Thinkpad X1 Carbon Laptop");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 04: Navigate to Recently viewed products page");
 		userCategoriesPage.SelectFooterCustomerService(driver, "Recently viewed products");
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 05: Verify only show 3 latest products");
+		Assert.assertTrue(userRecentlyViewProductPage.verifyProductNameVisible("Lenovo IdeaCentre 600 All-in-One PC"));
+		Assert.assertTrue(userRecentlyViewProductPage.verifyProductNameVisible("HP Spectre XT Pro UltraBook"));
+		Assert.assertTrue(userRecentlyViewProductPage.verifyProductNameVisible("Lenovo Thinkpad X1 Carbon Laptop"));
 	}
 	
 	@AfterClass
@@ -221,4 +230,5 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	private UserShopingCartPage userShopingCartPage;
 	private UserCompareProductPageObject userCompareProductPage;
 	private UserCategoriesPageObject userCategoriesPage;
+	private UserRecentlyViewProductPageObject userRecentlyViewProductPage;
 }
