@@ -37,6 +37,7 @@ public class BasePageUINopcommerce {
 	public static final String LOGIN_LINK = "xpath=//a[@class='ico-login']";
 	public static final String MYACCOUNT_LINK = "xpath=//a[@class='ico-account']";
 	public static final String LOGO_HOME = "xpath=//div[@class='header-logo']";
+	public static final String SHOPPING_CART_LINK = "xpath=//a[@class='ico-cart']/span[@class='cart-label']";
 	
 	//Link Footer
 	public static final String LINK_OF_CUSTOMER_SERVICE = "xpath=//strong[text()='Customer service']//parent::div[@class='title']//following-sibling::ul/li/a[text()='%s']";

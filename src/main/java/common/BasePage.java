@@ -762,6 +762,11 @@ public class BasePage {
 		clickToElement(driver, BasePageUINopcommerce.LOGO_HOME);
 	}
 	
+	public void OpenShoppingCart(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUINopcommerce.SHOPPING_CART_LINK);
+		clickToElement(driver, BasePageUINopcommerce.SHOPPING_CART_LINK);
+	}
+	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
 		clickToElement(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);

@@ -60,7 +60,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		userDetailProductPage.addToWishlist();
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 02: Verify message product has been added to your wishlist");
-		Assert.assertTrue(userDetailProductPage.verifyBarNotification(driver, "The product has been added to your ")); 
+		userDetailProductPage.verifyBarNotificationWithHyperLink(driver, "The product has been added to your wishlist");  
 		
 		sleepInSecond(3);
 		
@@ -181,7 +181,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	}
 	
 	@Test
-	public void Wishlist_05_(Method method) {
+	public void Wishlist_05_Recently_View_Products(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
 		userWishlistPage.OpenHomePage(driver);
