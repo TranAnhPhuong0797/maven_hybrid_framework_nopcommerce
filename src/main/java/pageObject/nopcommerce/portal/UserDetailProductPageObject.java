@@ -2,6 +2,7 @@ package pageObject.nopcommerce.portal;
 
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import common.BasePage;
 import pageUI.nopcommerce.User.DetailProductPageUI;
@@ -30,35 +31,50 @@ public class UserDetailProductPageObject extends BasePage{
 		return PageGeneratorManager.getUserWishlistPage(driver);
 	}
 
-	public void selectOptionProcessor(String processorValue) {
+	public void selectOptionProcessorIs(String processorValue) {
 		waitForElementVisible(driver, DetailProductPageUI.PROCESSOR_DROPDOWN);
 		selectItemInDefaultDropdown(driver, DetailProductPageUI.PROCESSOR_DROPDOWN, processorValue);
 	}
 
-	public void selectOptionRAM(String ramValue) {
+	public void selectOptionRAMIs(String ramValue) {
 		waitForElementVisible(driver, DetailProductPageUI.RAM_DROPDOWN);
 		selectItemInDefaultDropdown(driver, DetailProductPageUI.RAM_DROPDOWN, ramValue);
 	}
 
-	public void clickOptionHDD(String hddValue) {
+	public void clickOptionHDDIs(String hddValue) {
 		waitForElementVisible(driver, DetailProductPageUI.HDD_RADIO_BUTTON_VALUE, hddValue);
 		clickToElement(driver, DetailProductPageUI.HDD_RADIO_BUTTON_VALUE, hddValue);
 	}
 
-	public void clickOptionOS(String osValue) {
+	public void clickOptionOSIs(String osValue) {
 		waitForElementVisible(driver, DetailProductPageUI.OS_RADIO_BUTTON_VALUE, osValue);
 		clickToElement(driver, DetailProductPageUI.OS_RADIO_BUTTON_VALUE, osValue);
 	}
 
-	public void clickOptionSoftware(String softwareValue) {
+	public void clickOptionSoftwareIs(String softwareValue) {
 		waitForElementVisible(driver, DetailProductPageUI.SOFTWARE_CHECKBOX_VALUE, softwareValue);
 		checkToDefaultCheckboxOrRadio(driver, DetailProductPageUI.SOFTWARE_CHECKBOX_VALUE, softwareValue);
 	}
-
+	
+	public void UntickOptionSoftwareIs(String softwareValue) {
+		waitForElementVisible(driver, DetailProductPageUI.SOFTWARE_CHECKBOX_VALUE, softwareValue);
+		unCheckToDefaultCheckboxOrRadio(driver, DetailProductPageUI.SOFTWARE_CHECKBOX_VALUE, softwareValue);
+	}
 
 	public UserShopingCartPage OpenShoppingCard() {
 		waitForElementClickable(driver, DetailProductPageUI.SHOPPING_CART_LINK);
 		clickToElement(driver, DetailProductPageUI.SHOPPING_CART_LINK);
 		return PageGeneratorManager.getUserShopingCartPage(driver);
 	}
+
+	public void editQuantityProductis(String quantity) {
+		waitForElementVisible(driver, DetailProductPageUI.QUANTITY_TEXTBOX);
+		sendkeyToElement(driver, DetailProductPageUI.QUANTITY_TEXTBOX, quantity);
+	}
+
+	public void verifyProductPriceIs(String price) {
+		waitForElementVisible(driver, DetailProductPageUI.PRODUCT_PRICE);
+		Assert.assertEquals(getTextElement(driver, DetailProductPageUI.PRODUCT_PRICE), price);
+	}
+	
 }

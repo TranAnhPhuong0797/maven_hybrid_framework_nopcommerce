@@ -57,21 +57,21 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	public void Order_01_Add_Product_To_Cart(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Add Product to Card");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 01: Select option Processor");
-		userDetailProductPage.selectOptionProcessor("2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]");
+		userDetailProductPage.selectOptionProcessorIs("2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 02: Select option RAM");
-		userDetailProductPage.selectOptionRAM("8GB [+$60.00]");
+		userDetailProductPage.selectOptionRAMIs("8GB [+$60.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 03: Select option HDD");
-		userDetailProductPage.clickOptionHDD("400 GB [+$100.00]");
+		userDetailProductPage.clickOptionHDDIs("400 GB [+$100.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 04: Select option OS");
-		userDetailProductPage.clickOptionOS("Vista Premium [+$60.00]");
+		userDetailProductPage.clickOptionOSIs("Vista Premium [+$60.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 05: Select option Software");
-		userDetailProductPage.clickOptionSoftware("Microsoft Office [+$50.00]");
-		userDetailProductPage.clickOptionSoftware("Acrobat Reader [+$10.00]");
-		userDetailProductPage.clickOptionSoftware("Total Commander [+$5.00]");
+		userDetailProductPage.clickOptionSoftwareIs("Microsoft Office [+$50.00]");
+		userDetailProductPage.clickOptionSoftwareIs("Acrobat Reader [+$10.00]");
+		userDetailProductPage.clickOptionSoftwareIs("Total Commander [+$5.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 06: Click button Add to Cart");
 		userDetailProductPage.clicktoButtonByText(driver, "Add to cart");
@@ -92,84 +92,97 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	}
 	
 	@Test
-	public void Order_02_(Method method) {
+	public void Order_02_Edit_Product_In_Shopping_Cart(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Edit product in shopping cart");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Click edit product Build your own computer");
-		
+		userDetailProductPage = userShopingCartPage.clickEditProduct("Build your own computer");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 02: Select option Processor");
-		
+		userDetailProductPage.selectOptionProcessorIs("2.2 GHz Intel Pentium Dual-Core E2200");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 03: Select option RAM");
-		
+		userDetailProductPage.selectOptionRAMIs("4GB [+$20.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 04: Select option HDD");
-		
+		userDetailProductPage.clickOptionHDDIs("320 GB");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 04: Select option OS");
-		
+		userDetailProductPage.clickOptionOSIs("Vista Home [+$50.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 05: Select option Software");
-		
+		userDetailProductPage.UntickOptionSoftwareIs("Acrobat Reader [+$10.00]");
+		userDetailProductPage.UntickOptionSoftwareIs("Total Commander [+$5.00]");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 06: Increase quantity to 2 products");
-		
+		userDetailProductPage.editQuantityProductis("2");
+		sleepInSecond(1);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 07: Verify price");
-		
+		userDetailProductPage.verifyProductPriceIs("$1,320.00");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 08: Click button Update");
-		
+		userDetailProductPage.clicktoButtonByText(driver, "Update");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 09: Verify message");
-		
+		userDetailProductPage.verifyBarNotificationWithHyperLink(driver, "The product has been added to your shopping cart"); 
+		sleepInSecond(1);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 10: Close message");
-		
+		userDetailProductPage.closeBarNotification(driver);
+		sleepInSecond(1);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 11: Click shopping cart");
-		
+		userShopingCartPage = userDetailProductPage.OpenShoppingCard();
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 12: Verify information of product is updated in shopping cart");
-		
+		userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Processor");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 13: Verify price");
-		
+		userShopingCartPage.veirfyThePriceOfProduct("Build your own computer","$2,640.00");
 	}
 	
 	@Test
-	public void Order_03_(Method method) {
+	public void Order_03_Remove_Product_In_Shopping_Cart(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Remove product");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Click remove product");
+		
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Click update shopping cart");
+		
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 03: Verify shopping cart is empty");
+		
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 04: Verify product is NOT displayed in shopping cart");
+		
+	}
+	
+	@Test
+	public void Order_04_Update_Product_In_Shopping_Cart(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Update shopping cart");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
+		
+		
+		
+	}
+	
+	@Test
+	public void Order_05_Checkout_Order_Payment_Method_Cheque(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Checkout or Order by Payment Method Cheque");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
 		
 	}
 	
 	@Test
-	public void Order_04_(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Add product to Compare");
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		
-		
-		
-	}
-	
-	@Test
-	public void Order_05__(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
+	public void Order_06_Checkout_Order_Payment_Method_By_Card_Visa_Master(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Checkout or Order by Card");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
 		
 	}
 	
 	@Test
-	public void Order_06__(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		
-	}
-	
-	@Test
-	public void Order_07__(Method method) {
-		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
+	public void Order_07_ReOrder(Method method) {
+		ExtentTestManagerV5.startTest(method.getName(), "Re-Order");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
 		
 	}

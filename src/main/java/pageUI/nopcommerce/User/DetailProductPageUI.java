@@ -15,4 +15,6 @@ public class DetailProductPageUI {
 	public static final String HDD_RADIO_BUTTON_VALUE = "xpath=//label[contains(text(),'%s')]//preceding-sibling::input";
 	public static final String OS_RADIO_BUTTON_VALUE = "xpath=//label[contains(text(),'%s')]//preceding-sibling::input";
 	public static final String SOFTWARE_CHECKBOX_VALUE = "xpath=//label[contains(text(),'%s')]//preceding-sibling::input";
+	public static final String QUANTITY_TEXTBOX = "xpath=//input[@class='qty-input']";
+	public static final String PRODUCT_PRICE = "xpath=//div[@class='product-price']/span";
 }
