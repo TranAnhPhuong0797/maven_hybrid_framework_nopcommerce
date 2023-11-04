@@ -175,10 +175,27 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	@Test
 	public void Order_04_Update_Product_In_Shopping_Cart(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Update shopping cart");
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Search product Lenovo IdeaCentre 600 All-in-One PC");
+		userShopingCartPage.searchOnGlobalSearch(driver, "Lenovo IdeaCentre 600 All-in-One PC");
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Click Add to Cart");
+		userShopingCartPage.clicktoButtonByText(driver, "Add to cart");
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 03: Close message");
+		userShopingCartPage.closeBarNotification(driver);
+		sleepInSecond(3);
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 04: Click shopping cart");
+		userShopingCartPage.openShoppingCart(driver);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 05: Increase quantity upto 5 products");
+		userShopingCartPage.increaseQuantityOfProducts("Lenovo IdeaCentre 600 All-in-One PC", "5");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 06: Click Update shopping cart");
+		userShopingCartPage.clickUpdateShoppingCart();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 07: Verify price");
+		userShopingCartPage.veirfyThePriceOfProduct("Lenovo IdeaCentre 600 All-in-One PC","$2,500.00");
 	}
 	
 	@Test
@@ -215,9 +232,5 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	private UserRegisterPageObject userRegisterPage;
 	private UserLoginPageObject userLoginPage;
 	private UserDetailProductPageObject userDetailProductPage;
-	private UserWishlistPageObject userWishlistPage;
 	private UserShopingCartPage userShopingCartPage;
-	private UserCompareProductPageObject userCompareProductPage;
-	private UserCategoriesPageObject userCategoriesPage;
-	private UserRecentlyViewProductPageObject userRecentlyViewProductPage;
 }

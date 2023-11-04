@@ -103,4 +103,14 @@ public class UserShopingCartPage extends BasePage {
 		Assert.assertEquals(getTextElement(driver, ShopingCartPageUI.SHOPPING_CART_MESSAGE_EMPTY), message);
 	}
 
+	public void increaseQuantityOfProducts(String productName, String quantity) {
+		waitForElementVisible(driver, ShopingCartPageUI.QUANTITY_PRODUCT_TEXTBOX, productName);
+		sendkeyToElement(driver, ShopingCartPageUI.QUANTITY_PRODUCT_TEXTBOX, quantity, productName);
+	}
+
+	public void clickUpdateShoppingCart() {
+		waitForElementClickable(driver, ShopingCartPageUI.UPDATE_SHOPPING_CART_BUTTON);
+		clickToElement(driver, ShopingCartPageUI.UPDATE_SHOPPING_CART_BUTTON);
+	}
+
 }

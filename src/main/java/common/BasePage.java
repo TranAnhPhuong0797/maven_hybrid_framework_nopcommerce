@@ -772,6 +772,15 @@ public class BasePage {
 		Assert.assertEquals(getTextElement(driver, BasePageUINopcommerce.SHOPPING_CART_QUANTITY), quantity);
 	}
 	
+	public void searchOnGlobalSearch(WebDriver driver, String text) {
+		waitForElementVisible(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BOX);
+		sendkeyToElement(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BOX, text);
+		sleepInSecond(1);
+		
+		waitForElementClickable(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BUTTON);
+		clickToElement(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BUTTON);
+	}
+	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
 		clickToElement(driver, BasePageUINopcommerce.CUSTOMER_INFOR_LINK);
