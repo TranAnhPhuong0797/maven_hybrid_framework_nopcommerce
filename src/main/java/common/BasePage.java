@@ -747,24 +747,29 @@ public class BasePage {
 		Assert.assertEquals(getElementAttribute(driver, BasePageUINopcommerce.BAR_NOTIFICATION_SUCCESS_HAVE_HYPERLINK, "innerText"), message);
 	}
 	
-	public void SelectFooterCustomerService(WebDriver driver, String customerServiceLink) {
+	public void selectFooterCustomerService(WebDriver driver, String customerServiceLink) {
 		waitForElementClickable(driver, BasePageUINopcommerce.LINK_OF_CUSTOMER_SERVICE, customerServiceLink);
 		clickToElement(driver, BasePageUINopcommerce.LINK_OF_CUSTOMER_SERVICE, customerServiceLink);
 	}
 	
-	public void OpenWishlist(WebDriver driver) {
+	public void openWishlist(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.WISHLIST_LINK);
 		clickToElementByJS(driver, BasePageUINopcommerce.WISHLIST_LINK);
 	}
 	
-	public void OpenHomePage(WebDriver driver) {
+	public void openHomePage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.LOGO_HOME);
 		clickToElement(driver, BasePageUINopcommerce.LOGO_HOME);
 	}
 	
-	public void OpenShoppingCart(WebDriver driver) {
+	public void openShoppingCart(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUINopcommerce.SHOPPING_CART_LINK);
 		clickToElement(driver, BasePageUINopcommerce.SHOPPING_CART_LINK);
+	}
+	
+	public void verifyShoppingCartQuantity(WebDriver driver, String quantity) {
+		waitForElementVisible(driver, BasePageUINopcommerce.SHOPPING_CART_QUANTITY);
+		Assert.assertEquals(getTextElement(driver, BasePageUINopcommerce.SHOPPING_CART_QUANTITY), quantity);
 	}
 	
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {

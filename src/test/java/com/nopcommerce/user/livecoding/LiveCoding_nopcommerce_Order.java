@@ -87,8 +87,20 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 09: Click shopping cart");
 		userShopingCartPage = userDetailProductPage.OpenShoppingCard();
 		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 10: Verify the product is added into shopping cart");
-		Assert.assertTrue(userShopingCartPage.verifyProductisAddedSuccess("Build your own computer"));
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 10: Verify shopping cart quantity");
+		userShopingCartPage.verifyShoppingCartQuantity(driver,"(1)");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 11: Verify information of product is updated in shopping cart");
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Processor", "Processor: 2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "RAM", "RAM: 8GB [+$60.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "HDD", "HDD: 400 GB [+$100.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "OS", "OS: Vista Premium [+$60.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Software", "Software: Microsoft Office [+$50.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Software", "Software: Acrobat Reader [+$10.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Software", "Software: Total Commander [+$5.00]"));
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 12: Verify price");
+		userShopingCartPage.veirfyThePriceOfProduct("Build your own computer","$1,500.00");
 	}
 	
 	@Test
@@ -111,7 +123,9 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 05: Select option Software");
 		userDetailProductPage.UntickOptionSoftwareIs("Acrobat Reader [+$10.00]");
+		sleepInSecond(1);
 		userDetailProductPage.UntickOptionSoftwareIs("Total Commander [+$5.00]");
+		sleepInSecond(1);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 06: Increase quantity to 2 products");
 		userDetailProductPage.editQuantityProductis("2");
@@ -135,7 +149,11 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 		userShopingCartPage = userDetailProductPage.OpenShoppingCard();
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 12: Verify information of product is updated in shopping cart");
-		userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Processor");
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Processor", "Processor: 2.2 GHz Intel Pentium Dual-Core E2200"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "RAM", "RAM: 4GB [+$20.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "HDD", "HDD: 320 GB"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "OS", "OS: Vista Home [+$50.00]"));
+		verifyTrue(userShopingCartPage.verifyInformationOfProduct("Build your own computer", "Software", "Software: Microsoft Office [+$50.00]"));
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 13: Verify price");
 		userShopingCartPage.veirfyThePriceOfProduct("Build your own computer","$2,640.00");
@@ -145,16 +163,13 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	public void Order_03_Remove_Product_In_Shopping_Cart(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Remove product");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Click remove product");
+		userShopingCartPage.removeProductInCart("Build your own computer");
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Verify shopping cart is empty");
+		userShopingCartPage.verifyShoppingCartIsEmpty("Your Shopping Cart is empty!");
 		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Click update shopping cart");
-		
-		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 03: Verify shopping cart is empty");
-		
-		
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 04: Verify product is NOT displayed in shopping cart");
-		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 03: Verify product is NOT displayed in shopping cart");
+		Assert.assertTrue(userShopingCartPage.verifyProductisRemovedSuccess("Build your own computer"));
 	}
 	
 	@Test

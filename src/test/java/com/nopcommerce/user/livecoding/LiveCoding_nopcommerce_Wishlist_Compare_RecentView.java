@@ -99,7 +99,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		Assert.assertTrue(userShopingCartPage.verifyProductisAddedSuccess("Apple MacBook Pro 13-inch"));
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "WishList Page - Step 04: Back to Wishlist Page");
-		userShopingCartPage.OpenWishlist(driver);
+		userShopingCartPage.openWishlist(driver);
 		
 		sleepInSecond(3);
 		
@@ -111,7 +111,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	public void Wishlist_03_Remove_Product_In_Wishlist(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Remove product");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		userWishlistPage.OpenHomePage(driver);
+		userWishlistPage.openHomePage(driver);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 02: Select any product in Home Page");
 		userDetailProductPage = userHomePage.selectProductInSectionFeaturedProducts("HTC One M8 Android L 5.0 Lollipop");
@@ -147,7 +147,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	public void Wishlist_04_Add_Product_To_Compare(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Add product to Compare");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		userWishlistPage.OpenHomePage(driver);
+		userWishlistPage.openHomePage(driver);
 		
 		sleepInSecond(2);
 		
@@ -184,7 +184,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	public void Wishlist_05_Recently_View_Products(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Recently viewd products");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		userWishlistPage.OpenHomePage(driver);
+		userWishlistPage.openHomePage(driver);
 		
 		sleepInSecond(2);
 		
@@ -205,7 +205,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 		userCategoriesPage.selectProductTitle("Lenovo Thinkpad X1 Carbon Laptop");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 04: Navigate to Recently viewed products page");
-		userCategoriesPage.SelectFooterCustomerService(driver, "Recently viewed products");
+		userCategoriesPage.selectFooterCustomerService(driver, "Recently viewed products");
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Catagory Page - Step 05: Verify only show 3 latest products");
 		Assert.assertTrue(userRecentlyViewProductPage.verifyProductNameVisible("Lenovo IdeaCentre 600 All-in-One PC"));
