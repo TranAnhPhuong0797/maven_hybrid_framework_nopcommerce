@@ -6,10 +6,10 @@ import org.testng.Assert;
 import common.BasePage;
 import pageUI.nopcommerce.User.ShopingCartPageUI;
 
-public class UserShopingCartPage extends BasePage {
+public class UserShopingCartPageObject extends BasePage {
 	WebDriver driver;
 
-	public UserShopingCartPage(WebDriver driver) {
+	public UserShopingCartPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -39,8 +39,8 @@ public class UserShopingCartPage extends BasePage {
 		
 		String[] subInformation = information.split(",");
 		
-		switch (infor) {
-		case "Processor":
+		switch (infor.toUpperCase()) {
+		case "PROCESSOR":
 			for (String findInfor : subInformation) {
 				if (findInfor.contains(contentInfor)) {
 					return true;
@@ -80,7 +80,7 @@ public class UserShopingCartPage extends BasePage {
 			}
 			break;
 			
-		case "Software":
+		case "SOFTWARE":
 			for (String findInfor : subInformation) {
 				if (findInfor.contains(contentInfor)) {
 					return true;
@@ -92,6 +92,21 @@ public class UserShopingCartPage extends BasePage {
 		}
 		return false;
 	}
+	
+	public boolean verifyProductInfor(String productInfor, String prefixValue, String containsValue) {
+        String[] productSplit = productInfor.split("\n");
+        boolean status = false;
+        for (String subString : productSplit) {
+            String[] productInfoSplit = subString.split(": ");
+            if (productInfoSplit[0].equals(prefixValue)) {
+                status = productInfoSplit[1].equals(containsValue);
+            } else {
+                status = false;
+                break;
+            }
+        }
+        return status;
+    }
 
 	public void removeProductInCart(String productName) {
 		waitForElementClickable(driver, ShopingCartPageUI.REMOVE_PRODUCT_BUTTON, productName);
@@ -113,4 +128,25 @@ public class UserShopingCartPage extends BasePage {
 		clickToElement(driver, ShopingCartPageUI.UPDATE_SHOPPING_CART_BUTTON);
 	}
 
+	public UserDetailProductPageObject clicktoButtonAddToCart() {
+		waitForElementClickable(driver, ShopingCartPageUI.ADD_TO_CART_BUTTON);
+		clickToElement(driver, ShopingCartPageUI.ADD_TO_CART_BUTTON);
+		return PageGeneratorManager.getUserDetailProductPage(driver);
+	}
+
+	public void tickAcceptTermOfService() {
+		waitForElementClickable(driver, ShopingCartPageUI.TERM_OF_SERVICE_CHECKBOX);
+		checkToDefaultCheckboxOrRadio(driver, ShopingCartPageUI.TERM_OF_SERVICE_CHECKBOX);
+	}
+	
+	public void untickAcceptTermOfService() {
+		waitForElementClickable(driver, ShopingCartPageUI.TERM_OF_SERVICE_CHECKBOX);
+		unCheckToDefaultCheckboxOrRadio(driver, ShopingCartPageUI.TERM_OF_SERVICE_CHECKBOX);
+	}
+
+	public UserCheckOutPageObject clickButtonCheckout() {
+		waitForElementClickable(driver, ShopingCartPageUI.CHECKOUT_BUTTON);
+		clickToElement(driver, ShopingCartPageUI.CHECKOUT_BUTTON);
+		return PageGeneratorManager.getUserCheckOutPage(driver);
+	}
 }

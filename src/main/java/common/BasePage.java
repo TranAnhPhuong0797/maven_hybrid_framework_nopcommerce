@@ -775,7 +775,7 @@ public class BasePage {
 	public void searchOnGlobalSearch(WebDriver driver, String text) {
 		waitForElementVisible(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BOX);
 		sendkeyToElement(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BOX, text);
-		sleepInSecond(1);
+		sleepInSecond(2);
 		
 		waitForElementClickable(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BUTTON);
 		clickToElement(driver, BasePageUINopcommerce.GLOBAL_SEARCH_BUTTON);

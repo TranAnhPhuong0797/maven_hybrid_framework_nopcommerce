@@ -21,7 +21,7 @@ import pageObject.nopcommerce.portal.UserHomePageObject;
 import pageObject.nopcommerce.portal.UserLoginPageObject;
 import pageObject.nopcommerce.portal.UserRecentlyViewProductPageObject;
 import pageObject.nopcommerce.portal.UserRegisterPageObject;
-import pageObject.nopcommerce.portal.UserShopingCartPage;
+import pageObject.nopcommerce.portal.UserShopingCartPageObject;
 import pageObject.nopcommerce.portal.UserWishlistPageObject;
 import reportConfig.ExtentTestManagerV5;
 
@@ -227,7 +227,7 @@ public class LiveCoding_nopcommerce_Wishlist_Compare_RecentView extends BaseTest
 	private UserLoginPageObject userLoginPage;
 	private UserDetailProductPageObject userDetailProductPage;
 	private UserWishlistPageObject userWishlistPage;
-	private UserShopingCartPage userShopingCartPage;
+	private UserShopingCartPageObject userShopingCartPage;
 	private UserCompareProductPageObject userCompareProductPage;
 	private UserCategoriesPageObject userCategoriesPage;
 	private UserRecentlyViewProductPageObject userRecentlyViewProductPage;

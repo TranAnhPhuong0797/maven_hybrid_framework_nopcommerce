@@ -27,7 +27,7 @@ public class UserWishlistPageObject extends BasePage{
 		return isElementUndisplayed(driver, WishlistPageUI.WISHLIST_PRODUCT_NAME, product);
 	}
 	
-	public UserShopingCartPage clicktoButtonAddToCart() {
+	public UserShopingCartPageObject clicktoButtonAddToCart() {
 		waitForElementClickable(driver, WishlistPageUI.ADD_TO_CART_BUTTON);
 		clickToElement(driver, WishlistPageUI.ADD_TO_CART_BUTTON);
 		return PageGeneratorManager.getUserShopingCartPage(driver);

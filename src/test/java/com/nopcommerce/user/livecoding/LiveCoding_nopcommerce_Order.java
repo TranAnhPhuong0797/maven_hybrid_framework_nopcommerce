@@ -14,15 +14,12 @@ import com.nopcommerce.data.UserData;
 
 import common.BaseTest;
 import pageObject.nopcommerce.portal.PageGeneratorManager;
-import pageObject.nopcommerce.portal.UserCategoriesPageObject;
-import pageObject.nopcommerce.portal.UserCompareProductPageObject;
+import pageObject.nopcommerce.portal.UserCheckOutPageObject;
 import pageObject.nopcommerce.portal.UserDetailProductPageObject;
 import pageObject.nopcommerce.portal.UserHomePageObject;
 import pageObject.nopcommerce.portal.UserLoginPageObject;
-import pageObject.nopcommerce.portal.UserRecentlyViewProductPageObject;
 import pageObject.nopcommerce.portal.UserRegisterPageObject;
-import pageObject.nopcommerce.portal.UserShopingCartPage;
-import pageObject.nopcommerce.portal.UserWishlistPageObject;
+import pageObject.nopcommerce.portal.UserShopingCartPageObject;
 import reportConfig.ExtentTestManagerV5;
 
 public class LiveCoding_nopcommerce_Order extends BaseTest{
@@ -177,6 +174,7 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 		ExtentTestManagerV5.startTest(method.getName(), "Update shopping cart");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Search product Lenovo IdeaCentre 600 All-in-One PC");
 		userShopingCartPage.searchOnGlobalSearch(driver, "Lenovo IdeaCentre 600 All-in-One PC");
+		sleepInSecond(2);
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Click Add to Cart");
 		userShopingCartPage.clicktoButtonByText(driver, "Add to cart");
@@ -196,20 +194,125 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 07: Verify price");
 		userShopingCartPage.veirfyThePriceOfProduct("Lenovo IdeaCentre 600 All-in-One PC","$2,500.00");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 08: Remove product");
+		userShopingCartPage.removeProductInCart("Lenovo IdeaCentre 600 All-in-One PC");
 	}
 	
 	@Test
 	public void Order_05_Checkout_Order_Payment_Method_Cheque(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Checkout or Order by Payment Method Cheque");
-		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 01: Search product Apple MacBook Pro 13-inch");
+		userShopingCartPage.searchOnGlobalSearch(driver, "Apple MacBook Pro 13-inch");
+		sleepInSecond(2);
 		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 02: Click Add to Cart in global search");
+		userShopingCartPage.clicktoButtonByText(driver, "Add to cart");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Detail Product Page - Step 03: Click Add to Cart in Detail Product Page");
+		userDetailProductPage = userShopingCartPage.clicktoButtonAddToCart();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 04: Close message");
+		userDetailProductPage.closeBarNotification(driver);
+		sleepInSecond(3);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 05: Click shopping cart");
+		userShopingCartPage = userDetailProductPage.OpenShoppingCard();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 06: Tick accept term of service");
+		userShopingCartPage.tickAcceptTermOfService();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Shopping Cart Page - Step 07: Click Checkout");
+		userCheckOutPage = userShopingCartPage.clickButtonCheckout();	
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 08: Select Shipping Address");
+		userCheckOutPage.untickShipToSameAddress();
+		userCheckOutPage.selectBillingAddress("New Address");
+		sleepInSecond(2);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 09: Input Billing Address");
+		userCheckOutPage.inputFirstName("Nguyen");
+		userCheckOutPage.inputLastName("Van A");
+		userCheckOutPage.inputEmail("automationfc.vn@gmail.com");
+		userCheckOutPage.selectCountry("United Kingdom");
+		userCheckOutPage.selectStateAndProvince("Other");
+		userCheckOutPage.inputCity("Manchester");
+		userCheckOutPage.inputAddress1("113 New world street, Ward 11, Home District");
+		userCheckOutPage.inputZipCode("2000");
+		userCheckOutPage.inputPhoneNumber("+2 9999112113");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 10: Click Countinue button");
+		userCheckOutPage.clicktoButtonByText(driver, "Continue");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 11: Select Shipping Address");
+		userCheckOutPage.selectShippingAddress("New Address");
+		sleepInSecond(2);
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 12: Input Shipping Address");
+		userCheckOutPage.selectShippingCountry("Viet Nam");
+		userCheckOutPage.selectShippingStateAndProvince("Other");
+		userCheckOutPage.inputShippingCity("Ho Chi Minh");
+		userCheckOutPage.inputShippingAddress1("113 Hoang Hoa Tham street, Ward 11, Tan Binh District");
+		userCheckOutPage.inputShippingZipCode("70000");
+		userCheckOutPage.inputShippingPhoneNumber("09999112113");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 13: Click Countinue button");
+		userCheckOutPage.clicktoShippingCountinueButton();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 14: Select Shipping Method");
+		userCheckOutPage.clickShippingMethod("Ground ($0.00)");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 15: Click Countinue button");
+		userCheckOutPage.clicktoShippingMethodCountinueButton();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 16: Select Payment Method");
+		userCheckOutPage.clickPaymentMethod("Check / Money Order");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 17: Click Countinue button");
+		userCheckOutPage.clicktoPaymentMethodCountinueButton();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 18: Verify Payment information");
+		userCheckOutPage.verifyPaymentInformation("Mail Personal or Business Check, Cashier's Check or money order to:  NOP SOLUTIONS your address here, New York, NY 10001 USA Notice that if you pay by Personal or Business Check, your order may be held for up to 10 days after we receive your check to allow enough time for the check to clear. If you want us to ship faster upon receipt of your payment, then we recommend your send a money order or Cashier's check. P.S. You can edit this text from admin panel.");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 19: Click Countinue button");
+		userCheckOutPage.clicktoPaymentInfoCountinueButton();
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 20: Verify Order Information Billing Information");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "NAME", "Nguyen Van A");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "email", "Email: automationfc.vn@gmail.com");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "phone", "Phone: +2 9999112113");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "fax", "Fax: ");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "ADDREsS1", "113 New world street, Ward 11, Home District");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "city-state-zip", "Manchester,2000 ");
+		userCheckOutPage.verifyOrderInformation("Billing Address", "country", "United Kingdom");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 21: Verify Order Information Billing Payment");
+		userCheckOutPage.verifyOrderInformation("Payment", "payment-method", "Check / Money Order");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 22: Verify Order Information Shipping Information");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "name", "Nguyen Van A");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "email", "Email: automationfc.vn@gmail.com");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "phone", "Phone: 09999112113");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "fax", "Fax: ");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "ADDREsS1", "113 Hoang Hoa Tham street, Ward 11, Tan Binh District");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "city-state-zip", "Ho Chi Minh,70000");
+		userCheckOutPage.verifyOrderInformation("Shipping Address", "country", "Viet Nam");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 23: Verify Order Information Shipping Method");
+		userCheckOutPage.verifyOrderInformation("Shipping", "shipping-method", "Ground");
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 24: Verify Order Information Shopping card information");
+		
+		
+		ExtentTestManagerV5.getTest().log(Status.INFO, "Checkout Page - Step 24: Click Confirm button");
+		userCheckOutPage.clickToOrderConfirmButton();
 	}
 	
 	@Test
 	public void Order_06_Checkout_Order_Payment_Method_By_Card_Visa_Master(Method method) {
 		ExtentTestManagerV5.startTest(method.getName(), "Checkout or Order by Card");
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Home Page - Step 01: Back To Home Page");
-		
+			
 	}
 	
 	@Test
@@ -232,5 +335,6 @@ public class LiveCoding_nopcommerce_Order extends BaseTest{
 	private UserRegisterPageObject userRegisterPage;
 	private UserLoginPageObject userLoginPage;
 	private UserDetailProductPageObject userDetailProductPage;
-	private UserShopingCartPage userShopingCartPage;
+	private UserShopingCartPageObject userShopingCartPage;
+	private UserCheckOutPageObject userCheckOutPage;
 }

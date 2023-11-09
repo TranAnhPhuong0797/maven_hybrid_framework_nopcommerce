@@ -61,12 +61,6 @@ public class UserDetailProductPageObject extends BasePage{
 		unCheckToDefaultCheckboxOrRadio(driver, DetailProductPageUI.SOFTWARE_CHECKBOX_VALUE, softwareValue);
 	}
 
-	public UserShopingCartPage OpenShoppingCard() {
-		waitForElementClickable(driver, DetailProductPageUI.SHOPPING_CART_LINK);
-		clickToElement(driver, DetailProductPageUI.SHOPPING_CART_LINK);
-		return PageGeneratorManager.getUserShopingCartPage(driver);
-	}
-
 	public void editQuantityProductis(String quantity) {
 		waitForElementVisible(driver, DetailProductPageUI.QUANTITY_TEXTBOX);
 		sendkeyToElement(driver, DetailProductPageUI.QUANTITY_TEXTBOX, quantity);
@@ -75,6 +69,12 @@ public class UserDetailProductPageObject extends BasePage{
 	public void verifyProductPriceIs(String price) {
 		waitForElementVisible(driver, DetailProductPageUI.PRODUCT_PRICE);
 		Assert.assertEquals(getTextElement(driver, DetailProductPageUI.PRODUCT_PRICE), price);
+	}
+	
+	public UserShopingCartPageObject OpenShoppingCard() {
+		waitForElementClickable(driver, DetailProductPageUI.SHOPPING_CART_LINK);
+		clickToElement(driver, DetailProductPageUI.SHOPPING_CART_LINK);
+		return PageGeneratorManager.getUserShopingCartPage(driver);
 	}
 	
 }
