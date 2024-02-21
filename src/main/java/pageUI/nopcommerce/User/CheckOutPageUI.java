@@ -6,7 +6,8 @@ public class CheckOutPageUI {
 	public static final String ORDER_INFORMATION_BILLING_ADDRESS_PAYMENT = "xpath=//div[@class='order-review-data']//div[@class='billing-info-wrap']//div[@class='payment-method-info']//ul//li[@class='%s']//span[@class='value']";
 	public static final String ORDER_INFORMATION_SHIPPING_ADDRESS_INFO = "xpath=//div[@class='order-review-data']//div[@class='shipping-info-wrap']//div[@class='shipping-info']//ul//li[@class='%s']";
 	public static final String ORDER_INFORMATION_SHIPPING_ADDRESS_METHOD = "xpath=//div[@class='order-review-data']//div[@class='shipping-info-wrap']//div[@class='shipping-method-info']//ul//li[@class='%s']//span[@class='value']";
-	public static final String ORDER_INFORMATION_SHOPPING_CART = "xpath=";
+	public static final String ORDER_INFORMATION_SHOPPING_CART = "xpath=//form[@id='shopping-cart-form']//table[@class='cart']";
+	public static final String ORDER_INFORMATION_SHOPPING_CART_TOTAL_COST = "xpath=//form[@id='shopping-cart-form']//table[@class='cart-total']";
 	
 	//Checkbox/Radio
 	public static final String BILLING_SHIP_TO_THE_SAME_ADDRESS_CHECKBOX = "id=ShipToSameAddress";
