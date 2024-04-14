@@ -1,11 +1,11 @@
-Automation Service
+**Automation Service**
 Appendium
 •	Overview
 •	Installation
 •	Basic Usage
 
 
-Overview
+**Overview**
 •	This framework helps you build an example automation framework with Selenium, TestNG and Maven
 •	It contains enough from write test cases with TestNG & Selenium., run tests in XML files with TestNG, and manage the dependencies with the Maven build tool
 •	This framework allows you to run multiple tests and parallel tests.
@@ -13,14 +13,14 @@ Overview
 •	Apply Page Object Module to manage Objects
 
 
-Installation
+**Installation**
 •	Download IDEs: Eclipse or IntelliJ IDEA 
 •	Download JDK version 11 or 17
 •	Download Maven 3.6.3
 •	Setup system environment variable for JavaHome & MavenHome
 
 
-Basic Usage
+**Basic Usage**
 
 
 Thanks for watching
